@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style class="text/css">
+        form{text-align: center ;}
+        body {
+            background: #C7B39B url(images/bg.jpg);
+    color: #fff;
+    }
+      </style>
+</head>
+<body>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <p></p>
+        <h2>Регестрация</h2>
+        <label>
+            <div>Имя:</div>
+            <input type="text" name="name" placeholder="Name">
+        </label>
+        <label>
+            <p>Фамилия:</p>
+            <input type="text" name="surname" placeholder="Surname">
+        </label> 
+        <label>
+            <p>Номер телефона:</p>
+            <input style="height: 20px; width: 100px;" type="tel" name="number" placeholder="+380**********">
+        </label> 
+        <label>
+            <p>Электронная почта:</p>
+            <input style="height: 20px; width: 180px;" required type="email" name="email" placeholder="name1surname@gmail.com">
+        </label>
+        <label>
+            <p>Пароль:</p>
+            <input style="height: 20px; width: 100px;" required type="password" name="password" placeholder="password1">
+        </label>
+        <label>
+            <p></p>
+            Пол:
+            <select name="category">
+                <option value="male">Мужской</option>
+                <option value="famale">Женский</option>
+                <option value="another">Другое</option>
+            </select>
+        </label>
+        <label>
+            <p></p>
+            Дата Рождения:
+            <input required type="date" name="date" placeholder="01.01.2000">
+        </label>
+        <label>
+            <p></p>
+            <b>Вы согласны c условиями пользования:</b>
+            <input required type="checkbox" name="checkbox">
+        </label>
+        <p><input style="height: 30px; width: 145px; background-color: aqua; color: rgb(0, 0, 0);" type="submit" value="Зарегестрироваться"></p>
+    </form>
+</body>
+</html>
